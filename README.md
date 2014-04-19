@@ -75,41 +75,50 @@ Welcome to Overload Grid. This is a simple, easy and powerfull CSS Grid. It's fr
 ```
 You'll be able to create your quick and simple structures. The beauty of this grid is that it is 100% customizable and intuitiba. Take a vistaso the code, you see that each box has a size and is named according to their size. Eg a box that takes up 100% of the container is named box-100 and also with the other
 
-#### Customising your grid
-Maybe you want to go old school and create a two-column layout, It's so easy all you need is basic math (along as the .bit- classes equal to 100%, it will be perfect).
+#### !Important detail
+You can noted that the separation of the blocks is through "padding", this is for our widths are not broken. But if we want to create a row of blocks in another row, we would have problems with these spaces and not remain good. Therefore we created a series of general classes that are used to make a small hack and so our grid just right :)
+
+check out the code. We will reset the padding and create that separation with a margin (Preset mb10) class.
+
 ```
-<div class="frame">
-	<div class="bit-75">Content here</div>
-	<div class="bit-25">Content here</div>
+<div class="o-grid">
+    <div class="boxM-25 boxS-100">
+        <div class="o-grid">
+            <div class="boxM-100 boxS-100 pReset mb10">
+                <div class="bit-box">25</div>
+            </div>
+        </div>
+        <div class="o-grid">
+            <div class="boxM-100 boxS-100 pReset">
+                <div class="bit-box">25</div>
+            </div>
+        </div>
+    </div>
 </div>
+
 ```
-Creating the css is also simple:
+Creating your settings width for the blocks is really simple, all you need to keep in mind is that your blocks always add to 100%:
 ```
-.bit-75 {width:75%;}
-.bit-25 {width:25%;}
+.box-75 {width:75%;}
+.box-25 {width:25%;}
 ```
 
 ### Support
-If you have any questions or you're struggling with it, get in touch:
+If you have any questions or you can help us improve this grid please contact me, we will gladly answer.:
 
--   [hello.joer@gmail.com](mailto:hello.joer@gmail.com)
--   [@joericho](http://twitter.com/joericho)
-
-### Tutorials
-[Build a Freshly Squeezed Responsive Grid System](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/build-a-freshly-squeezed-responsive-grid-system)
-If you have written about Lemonade or want too - [let me know](http://twitter.com/joericho)
+-   [chiappe.luis@gmail.com](mailto:chiappe.luis@gmail.com)
+-   [@luifich](http://twitter.com/luifich)
 
 ### Lets make Lemonade
 Currently building the real documentation website for Lemonade, If you've got any finished results of using Lemonade or you've got any kind words to say - [get in touch](http://twitter.com/joericho)
 
 ### Thank you!
-I've had some amazing feedback since creating Lemonade and I am glad it can help people.
+Remember if you have any question or just you want to help me to do a better grid please write me :).
 
-Also want to thank people who are testing and contributing to the product.
 
 ### License
 ```
-Copyright (C) 2013 Joe Richardson
+Copyright (C) 2014 Luis Chiappe and Overload Team
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
