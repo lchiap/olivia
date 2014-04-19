@@ -8,11 +8,11 @@
 *
 */
 
-.bit-box {
+.box {
     text-align: center;
     font: 15px "Helvetica Neue";
-    background:#008fd9;
-    color: #fff;
+    background:#fff;
+    color: #008fd9;
     padding: 15px 0 15px 0
 }
 
