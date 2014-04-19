@@ -1,12 +1,12 @@
-# Lemonade
+# Overload Grid
 
-Lemonade is a a simple, flexible and easy-to-customise grid system. It was created in order to give designers & developers a kickstart with their projects. It currently supports Chrome, Firefox, Safari, Opera & IE 9+, also supports major phone devices too.
+Overload Grid is a simple, easy and powerfull CSS Grid. It's free, you can use this Grid for your proyects. 
 
 ## Installation
 
--   Clone `git clone https://github.com/dope/lemonade.git`
--   [Download the latest version](https://github.com/dope/lemonade/archive/master.zip)
--   Install with Bower: `bower install lemonade`
+-   Clone `git clone https://github.com/Luifi/Overload-Grid`
+-   [Download the latest version](https://github.com/.zip)
+
 
 
 ## Getting Started
