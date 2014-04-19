@@ -1,6 +1,7 @@
 # Overload Grid
 
-Overload Grid is a simple, easy and powerfull CSS Grid. It's free, you can use this Grid for your proyects. 
+Welcome to Overload Grid. This is a simple, easy and powerfull CSS Grid. It's free, you can use this Grid for your proyects.
+
 
 ## Installation
 
@@ -10,22 +11,69 @@ Overload Grid is a simple, easy and powerfull CSS Grid. It's free, you can use t
 
 
 ## Getting Started
-Getting started couldn't be easier
 
 #### First you need to link the stylesheet
 ```
-<link rel="stylesheet" type="text/css" href="css/lemonade.css">
+<link rel="stylesheet" type="text/css" href="css/overload-grid.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
 ```
 
 #### Structuring your layouts
 ```
-<div class="frame">
-	<div class="bit-3">Content here</div>
-	<div class="bit-3">Content here</div>
-	<div class="bit-3">Content here</div>
+<div class="container">
+    <div class="o-grid">
+        <div class="boxM-100 boxS-100">
+            <div class="bit-box">100</div>
+        </div>
+    </div>
+
+    <div class="o-grid">
+        <div class="boxM-50 boxS-100">
+            <div class="bit-box">50</div>
+        </div>
+        <div class="boxM-50 boxS-100">
+            <div class="bit-box">50</div>
+        </div>
+    </div>
+
+    <div class="o-grid">
+        <div class="boxM-25 boxS-50">
+            <div class="bit-box">25</div>
+        </div>
+        <div class="boxM-25 boxS-50">
+            <div class="bit-box">25</div>
+        </div>
+        <div class="boxM-25 boxS-50">
+            <div class="bit-box">25</div>
+        </div>
+        <div class="boxM-25 boxS-50">
+            <div class="bit-box">25</div>
+        </div>
+    </div>
+
+    <div class="o-grid">
+        <div class="boxM-25 boxS-100">
+            <div class="bit-box">25</div>
+        </div>
+        <div class="boxM-50 boxS-100">
+            <div class="bit-box">50</div>
+        </div>
+        <div class="boxM-25 boxS-100">
+            <div class="o-grid">
+                <div class="boxM-100 boxS-100 pReset mb10">
+                    <div class="bit-box">25</div>
+                </div>
+            </div>
+            <div class="o-grid">
+                <div class="boxM-100 boxS-100 pReset">
+                    <div class="bit-box">25</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 ```
-Creating a three-column layout (for galleries for example) is really simple, this will scale down to 100% on mobile. Wrap the .bit's in a .frame class to clear the floats.
+You'll be able to create your quick and simple structures. The beauty of this grid is that it is 100% customizable and intuitiba. Take a vistaso the code, you see that each box has a size and is named according to their size. Eg a box that takes up 100% of the container is named box-100 and also with the other
 
 #### Customising your grid
 Maybe you want to go old school and create a two-column layout, It's so easy all you need is basic math (along as the .bit- classes equal to 100%, it will be perfect).
