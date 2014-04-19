@@ -1,0 +1,183 @@
+/*
+*
+* Overload Grid v1.1
+* Copyright 2014, Luis Chiappe - Overload - Web & Graphic design -
+* Overloadgrid.com | luischiappe.com.ar
+* Free to use for web designers and web developers.
+* Enjoy!
+*
+*/
+
+.bit-box {
+    text-align: center;
+    font: 15px "Helvetica Neue";
+    background:#008fd9;
+    color: #fff;
+    padding: 15px 0 15px 0
+}
+
+/* ================================ 
+GRID STYLES/ESTILOS DE GRILLA 
+=================================== */
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+/* Set the width of the grid */
+.o-grid {
+    margin: 0 auto;
+}
+
+.container {
+    margin: auto;
+    max-width: 1600px;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+/* Attribute selector */
+[class*='boxS-'], [class*='boxM-'], [class*='boxL-'] {
+    float: left;
+    padding: 0.3em;
+}
+
+/* Floats last ".box-" to the right */
+[class*='boxS-']:last-of-type,  [class*='boxM-']:last-of-type, [class*='boxL-']:last-of-type{
+    float: right;
+}
+
+/* Clearfix */
+.o-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Set Widths */
+
+/*---------- Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+
+    .boxL-100  { width: 100%; }
+    .boxL-50  { width: 50%; }
+    .boxL-33  { width: 33.33%; }
+    .boxL-25  { width: 25%; }
+    .boxL-20  { width: 20%; }
+    .boxL-16  { width: 16.6666666667%; }
+    .boxL-14 { width: 14.2857142857%; }
+    .boxL-12  { width: 12.5%; }
+    .boxL-11 { width: 11.1111111111%; }
+    .boxL-10 { width: 10%; }
+    .boxL-9 { width: 9.09090909091%; }
+    .boxL-8 { width: 8.33%; }
+
+}
+
+/*---------- Medium screens ----------- */
+@media only screen 
+and (min-width : 780px) {
+
+    .boxM-100  { width: 100%; }
+    .boxM-50  { width: 50%; }
+    .boxM-33  { width: 33.33%; }
+    .boxM-25  { width: 25%; }
+    .boxM-20  { width: 20%; }
+    .boxM-16  { width: 16.6666666667%; }
+    .boxM-14 { width: 14.2857142857%; }
+    .boxM-12  { width: 12.5%; }
+    .boxM-11 { width: 11.1111111111%; }
+    .boxM-10 { width: 10%; }
+    .boxM-9 { width: 9.09090909091%; }
+    .boxM-8 { width: 8.33%; }
+    
+}
+
+/*---------- Small screens mobiles ----------- */
+@media (max-width: 780px) {
+
+    .boxS-100  { width: 100%; }
+    .boxS-50  { width: 50%; }
+    .boxS-33  { width: 33.33%; }
+    .boxS-25  { width: 25%; }
+    .boxS-20  { width: 20%; }
+    .boxS-16  { width: 16.6666666667%; }
+    .boxS-14 { width: 14.2857142857%; }
+    .boxS-12  { width: 12.5%; }
+    .boxS-11 { width: 11.1111111111%; }
+    .boxS-10 { width: 10%; }
+    .boxS-9 { width: 9.09090909091%; }
+    .boxS-8 { width: 8.33%; }
+}
+
+
+/* ================================ 
+COMMON STYLES/ESTILOS COMUNES 
+=================================== */
+
+body {
+    font-size: 16px;
+}
+
+/* Padding Set */
+.pt5{padding-top:5px}
+.pt10{padding-top:10px}
+.pt15{padding-top:15px}
+.pt20{padding-top:20px}
+.pt25{padding-top:25px}
+.pt30{padding-top:30px}
+.pt40{padding-top:40px}
+
+.pb5{padding-bottom:5px}
+.pb10{padding-bottom:10px}
+.pb15{padding-bottom:15px}
+.pb20{padding-bottom:20px}
+.pb25{padding-bottom:25px}
+.pb30{padding-bottom:30px}
+.pb40{padding-bottom:40px}
+
+.pReset{ padding: 0;}
+
+/* Margin Set */
+.mr5{ margin-right:5px!important;}
+.mr10{ margin-right:10px!important;}
+.ml5{ margin-left:5px!important;}
+.ml10{ margin-left:10px!important}
+.mr20{ margin-right:20px!important;}
+.ml20{ margin-left:20px!important}
+.mr30{ margin-right:30px!important;}
+.ml30{ margin-left:30px!important}
+
+.mt5{margin-top:5px}
+.mt10{ margin-top:10px}
+.mt15{margin-top:15px}
+.mt20{margin-top:20px}
+.mt25{margin-top:25px}
+.mt30{margin-top:30px}
+.mt40{margin-top:40px}
+
+.mb5{margin-bottom:5px}
+.mb10{margin-bottom:10px}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.mb25{margin-bottom:25px}
+.mb30{margin-bottom:30px}
+
+.mReset {margin: 0px !important;}
+
+.clear {clear: both;}
+
+
+
+
+
+
