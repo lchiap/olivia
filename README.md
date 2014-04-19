@@ -73,7 +73,7 @@ Welcome to Overload Grid. This is a simple, easy and powerfull CSS Grid. It's fr
     </div>
 </div>
 ```
-You'll be able to create your quick and simple structures. The beauty of this grid is that it is 100% customizable and intuitiba. Take a vistaso the code, you see that each box has a size and is named according to their size. Eg a box that takes up 100% of the container is named box-100 and also with the other
+You will be able to create their structures quickly and easily. The beauty of this network is that it is 100% customizable and intuitiba. Check vistaso the code, you see that each box has a size and is named according to their size. For example, a box that occupies 100% of the container for a medium-resolution devices (laptop) is called boxM-100 and also with the other sizes.
 
 #### !Important detail
 You can noted that the separation of the blocks is through "padding", this is for our widths are not broken. But if we want to create a row of blocks in another row, we would have problems with these spaces and not remain good. Therefore we created a series of general classes that are used to make a small hack and so our grid just right :)
@@ -99,8 +99,8 @@ check out the code. We will reset the padding and create that separation with a 
 ```
 Creating your settings width for the blocks is really simple, all you need to keep in mind is that your blocks always add to 100%:
 ```
-.box-75 {width:75%;}
-.box-25 {width:25%;}
+.boxM-75 {width:75%;}
+.boxM-25 {width:25%;}
 ```
 
 ### Support
