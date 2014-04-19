@@ -115,6 +115,8 @@ Currently building the real documentation website for Lemonade, If you've got an
 ### Thank you!
 Remember if you have any question or just you want to help me to do a better grid please write me :).
 
+This grid is inspired by lemonade grid by @joericho, thank for their contribution and support for the creation of this grid.
+
 
 ### License
 ```
