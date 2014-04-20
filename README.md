@@ -109,9 +109,6 @@ If you have any questions or you can help us improve this grid please contact me
 -   [chiappe.luis@gmail.com](mailto:chiappe.luis@gmail.com)
 -   [@luifich](http://twitter.com/luifich)
 
-### Lets make Lemonade
-Currently building the real documentation website for Lemonade, If you've got any finished results of using Lemonade or you've got any kind words to say - [get in touch](http://twitter.com/joericho)
-
 ### Thank you!
 Remember if you have any question or just you want to help me to do a better grid please write me :).
 
