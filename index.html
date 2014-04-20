@@ -22,7 +22,7 @@
         <link rel="stylesheet" type="text/css" href="css/overload-grid.css">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
 
         <title>Overload Grid</title>
@@ -34,12 +34,24 @@
 
     </head>
 
-    <body>
+    <body class="cbp-spmenu-push">
         
-        <header>
-            <div class="logo"><img src="img/logo.png" alt=""></div>
-            <h1>Simple, easy and powerfull CSS grid</h1>
-        </header>
+        <div class="container">
+            <header>
+                <button id="showRight"><img src="img/menu2.png" alt=""></button>
+                <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+                    <h3>Menu</h3>
+                    <a href="#">Celery seakale</a>
+                    <a href="#">Dulse daikon</a>
+                    <a href="#">Zucchini garlic</a>
+                    <a href="#">Catsear azuki bean</a>
+                    <a href="#">Dandelion bunya</a>
+                    <a href="#">Rutabaga</a>
+                </nav>
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+                <h1>Simple, easy and powerfull CSS grid</h1>
+            </header>
+        </div>
 
         <div class="container">
             
@@ -129,11 +141,46 @@
                     <div class="box">25</div>
                 </div>
             </div>
-
-            
             
         </div>
+        
+        <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+        <script src="js/jquery.js"></script>
+		
+		<script src="js/classie.js"></script>
+		
+		<script>
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRight = document.getElementById( 'showRight' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
 
+		
+			$(showRight).click(function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRight' );
+			});
+			
+			$(showRightPush).click(function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toleft' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRightPush' );
+			});
+
+			function disableOther( button ) {
+				
+				if( button !== 'showRight' ) {
+					classie.toggle( showRight, 'disabled' );
+                }
+				
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+			
+		</script>
 
     </body>
 </html>
