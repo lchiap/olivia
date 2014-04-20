@@ -21,7 +21,7 @@ Welcome to Overload Grid. This is a simple, easy and powerfull CSS Grid. It's fr
 #### Structuring your layouts. Example:
 ```
 <div class="container">
-    <div class="o-grid">
+    <div class="o-grid">overloadsgn
         <div class="boxM-50 boxS-100">
             <div class="box">50</div>
         </div>
@@ -64,8 +64,9 @@ Creating your settings width for the blocks is really simple, all you need to ke
 ### Support
 If you have any questions or you can help us improve this grid please contact me, we will gladly answer.:
 
--   [chiappe.luis@gmail.com](mailto:chiappe.luis@gmail.com)
+-   [overloadsgn@gmail.com](mailto:overloadsgnoverloadsgn@gmail.com)
 -   [@luifich](http://twitter.com/luifich)
+-   [@ma7payne](http://twitter.com/ma7payne)
 
 ### Thank you!
 Remember if you have any question or just you want to help me to do a better grid please write me :).
