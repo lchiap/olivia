@@ -76,7 +76,7 @@ This grid is inspired by lemonade grid by @joericho, thank for their contributio
 
 ### License
 ```
-Copyright (C) 2014 Luis Chiappe and Overload Team
+Copyright (C) 2014 Overload Team
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
