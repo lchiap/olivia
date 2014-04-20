@@ -18,57 +18,15 @@ Welcome to Overload Grid. This is a simple, easy and powerfull CSS Grid. It's fr
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 ```
 
-#### Structuring your layouts
+#### Structuring your layouts. Example:
 ```
 <div class="container">
     <div class="o-grid">
-        <div class="boxM-100 boxS-100">
-            <div class="bit-box">100</div>
-        </div>
-    </div>
-
-    <div class="o-grid">
         <div class="boxM-50 boxS-100">
-            <div class="bit-box">50</div>
+            <div class="box">50</div>
         </div>
         <div class="boxM-50 boxS-100">
-            <div class="bit-box">50</div>
-        </div>
-    </div>
-
-    <div class="o-grid">
-        <div class="boxM-25 boxS-50">
-            <div class="bit-box">25</div>
-        </div>
-        <div class="boxM-25 boxS-50">
-            <div class="bit-box">25</div>
-        </div>
-        <div class="boxM-25 boxS-50">
-            <div class="bit-box">25</div>
-        </div>
-        <div class="boxM-25 boxS-50">
-            <div class="bit-box">25</div>
-        </div>
-    </div>
-
-    <div class="o-grid">
-        <div class="boxM-25 boxS-100">
-            <div class="bit-box">25</div>
-        </div>
-        <div class="boxM-50 boxS-100">
-            <div class="bit-box">50</div>
-        </div>
-        <div class="boxM-25 boxS-100">
-            <div class="o-grid">
-                <div class="boxM-100 boxS-100 pReset mb10">
-                    <div class="bit-box">25</div>
-                </div>
-            </div>
-            <div class="o-grid">
-                <div class="boxM-100 boxS-100 pReset">
-                    <div class="bit-box">25</div>
-                </div>
-            </div>
+            <div class="box">50</div>
         </div>
     </div>
 </div>
