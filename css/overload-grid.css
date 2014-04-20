@@ -38,6 +38,7 @@ GRID STYLES/ESTILOS DE GRILLA
 .container {
     margin: auto;
     max-width: 1024px;
+    position: relative;
 }
 
 .container-fluid {

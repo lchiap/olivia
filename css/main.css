@@ -14,6 +14,20 @@ header h1 {
 }
 
 /* NAV */
+button#showRightPush {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    color: #fff;
+    border: 0;
+    font-size: 2em;
+    cursor: pointer;
+    outline: none;
+    float: left;
+    padding: 15px;
+}
+
 .cbp-spmenu {
 	background: #47a3da;
 	position: fixed;
