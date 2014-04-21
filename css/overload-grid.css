@@ -30,11 +30,7 @@ GRID STYLES/ESTILOS DE GRILLA
     box-sizing: border-box
 }
 
-/* Set the width of the grid */
-.o-grid {
-    margin: 0 auto;
-}
-
+/* Container */
 .container {
     margin: auto;
     max-width: 980px;
@@ -43,6 +39,11 @@ GRID STYLES/ESTILOS DE GRILLA
 
 .container-fluid {
     width: 100%;
+}
+
+/* Row container */
+.o-grid {
+    margin: 0 auto;
 }
 
 /* Attribute selector */
