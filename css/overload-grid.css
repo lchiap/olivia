@@ -30,6 +30,12 @@ GRID STYLES/ESTILOS DE GRILLA
     box-sizing: border-box
 }
 
+body{
+    padding: 0px 10px;
+    background: #008fd9;
+    color: white;
+}
+
 /* Container */
 .container {
     margin: auto;
@@ -47,9 +53,6 @@ GRID STYLES/ESTILOS DE GRILLA
     margin-left: -0.3em;
     margin-right: -0.3em;
 }
-
-
-
 
 /* Attribute selector */
 [class*='boxS-'], [class*='boxM-'], [class*='boxL-'] {
@@ -179,9 +182,13 @@ body {
 .mb25{margin-bottom:25px}
 .mb30{margin-bottom:30px}
 
+.mAuto {margin: auto !important;}
+
 .mReset {margin: 0px !important;}
 
 .clear {clear: both;}
+
+.floatReset {float: none !important;}
 
 
 
