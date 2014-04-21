@@ -9,6 +9,13 @@ header .logo {
     text-align: center;
 }
 
+header .logo img {
+    max-width:100% !important;
+    height:auto;
+    display:block;
+    margin: auto;
+}
+
 header h1 {
     text-align: center;    
 }
@@ -35,6 +42,13 @@ button#showRightPush {
 #wrapper p{
     margin: 10px 0px;
 }
+
+    /* marckup */
+    pre[class*="language-"] {
+        border-radius: 6px !important;
+        background: #222!important;
+        padding: 1em;
+    }
 
 .cbp-spmenu {
 	background: #0d77b6;

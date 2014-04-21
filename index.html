@@ -22,6 +22,7 @@
         <link rel="stylesheet" type="text/css" href="css/overload-grid.css">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/prism.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
 
 
@@ -35,7 +36,7 @@
     </head>
 
     <body class="cbp-spmenu-push">
-        
+
         <!-- HEADER -->
         <header class="container">
             <button id="showRightPush">☰</button>
@@ -51,17 +52,17 @@
             <h1>Simple, easy and powerfull CSS grid</h1>
         </header>
         <!-- / HEADER -->
-        
+
         <!-- GRID -->
         <div class="container">
-            
+
             <!-- 1 Box -->
             <div class="o-grid">
                 <div class="boxM-1 boxS-1">
                     <div class="box">1</div>
                 </div>
             </div>
-            
+
             <!-- 2 Box -->
             <div class="o-grid">
                 <div class="boxM-2 boxS-1">
@@ -71,7 +72,7 @@
                     <div class="box">2</div>
                 </div>
             </div>
-            
+
             <!-- 3 Box -->
             <div class="o-grid">
                 <div class="boxM-3 boxS-1">
@@ -84,7 +85,7 @@
                     <div class="box">3</div>
                 </div>
             </div>
-            
+
             <!-- 4 Box -->
             <div class="o-grid">
                 <div class="boxM-4 boxS-2">
@@ -100,7 +101,7 @@
                     <div class="box">4</div>
                 </div>
             </div>
-            
+
             <!-- 5 Box -->
             <div class="o-grid">
                 <div class="boxM-5 boxS-2">
@@ -119,7 +120,7 @@
                     <div class="box">5</div>
                 </div>
             </div>
-            
+
             <!-- 6 Box -->
             <div class="o-grid">
                 <div class="boxM-6 boxS-2">
@@ -141,55 +142,59 @@
                     <div class="box">6</div>
                 </div>
             </div>
-            
+
         </div>
         <!-- /GRID -->
-        
+
         <!-- WRAPPER -->
         <div id="wrapper" class="container">
             <div class="getting-started">
                 <h2>Getting Started</h2>
                 <p>Our main idea is to provide an easy to use grid and implentación but succeeds in creating powerful project is within walking distance. </p>
                 <p>The first thing to do is download Overload Grid. When you have all the files in the folder you will find the most important CSS, you must link your project </p>
+
+                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>css/overload-grid.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>css/normalize.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+            
             </div>
         </div>
-        
+
         <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
         <script src="js/jquery.js"></script>
-		<script src="js/classie.js"></script>
-		
-		<script>
-			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-				showRight = document.getElementById( 'showRight' ),
-				showRightPush = document.getElementById( 'showRightPush' ),
-				body = document.body;
+        <script src="js/classie.js"></script>
 
-		
-			$(showRight).click(function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( menuRight, 'cbp-spmenu-open' );
-				disableOther( 'showRight' );
-			});
-			
-			$(showRightPush).click(function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toleft' );
-				classie.toggle( menuRight, 'cbp-spmenu-open' );
-				disableOther( 'showRightPush' );
-			});
+        <script>
+            var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+                showRight = document.getElementById( 'showRight' ),
+                showRightPush = document.getElementById( 'showRightPush' ),
+                body = document.body;
 
-			function disableOther( button ) {
-				
-				if( button !== 'showRight' ) {
-					classie.toggle( showRight, 'disabled' );
+
+            $(showRight).click(function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( menuRight, 'cbp-spmenu-open' );
+                disableOther( 'showRight' );
+            });
+
+            $(showRightPush).click(function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( body, 'cbp-spmenu-push-toleft' );
+                classie.toggle( menuRight, 'cbp-spmenu-open' );
+                disableOther( 'showRightPush' );
+            });
+
+            function disableOther( button ) {
+
+                if( button !== 'showRight' ) {
+                    classie.toggle( showRight, 'disabled' );
                 }
-				
-				if( button !== 'showRightPush' ) {
-					classie.toggle( showRightPush, 'disabled' );
-				}
-			}
-			
-		</script>
+
+                if( button !== 'showRightPush' ) {
+                    classie.toggle( showRightPush, 'disabled' );
+                }
+            }
+
+        </script>
 
     </body>
 </html>
