@@ -33,7 +33,7 @@ GRID STYLES/ESTILOS DE GRILLA
 /* Container */
 .container {
     margin: auto;
-    max-width: 980px;
+    max-width: 960px;
     position: relative;
 }
 

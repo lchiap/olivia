@@ -27,6 +27,15 @@ button#showRightPush {
     float: left;
 }
 
+/* WRAPPER */
+#wrapper {
+    margin-top: 70px;
+}
+
+#wrapper p{
+    margin: 10px 0px;
+}
+
 .cbp-spmenu {
 	background: #0d77b6;
 	position: fixed;
