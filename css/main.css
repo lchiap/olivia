@@ -46,7 +46,7 @@ button#showRightPush {
     /* marckup */
     pre[class*="language-"] {
         border-radius: 6px !important;
-        background: #222!important;
+        background: #2c2c2c!important;
         padding: 1em;
     }
 

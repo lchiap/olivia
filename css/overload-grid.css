@@ -44,7 +44,12 @@ GRID STYLES/ESTILOS DE GRILLA
 /* Row container */
 .o-grid {
     margin: 0 auto;
+    margin-left: -0.3em;
+    margin-right: -0.3em;
 }
+
+
+
 
 /* Attribute selector */
 [class*='boxS-'], [class*='boxM-'], [class*='boxL-'] {
