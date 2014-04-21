@@ -16,7 +16,7 @@ header h1 {
 /* NAV */
 button#showRightPush {
     position: absolute;
-    top: 22px;
+    top: 26px;
     right: 10px;
     background: none;
     color: #fff;

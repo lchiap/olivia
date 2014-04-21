@@ -21,7 +21,7 @@ Welcome to Overload Grid. This is a simple, easy and powerfull CSS Grid. It's fr
 #### Structuring your layouts. Example:
 ```
 <div class="container">
-    <div class="o-grid">overloadsgn
+    <div class="o-grid">
         <div class="boxM-50 boxS-100">
             <div class="box">50</div>
         </div>
