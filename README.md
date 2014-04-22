@@ -22,10 +22,10 @@ Welcome to Overload Grid. This is a simple, easy and powerful CSS Grid. It's fre
 ```
 <div class="container">
     <div class="o-grid">
-        <div class="boxM-2 boxS-1">
+        <div class="boxM-50 boxS-100">
             <div class="box">2 Medium - 1 Small</div>
         </div>
-        <div class="boxM-2 boxS-1">
+        <div class="boxM-50 boxS-100">
             <div class="box">2 Medium - 1 Small</div>
         </div>
     </div>
@@ -42,12 +42,12 @@ check out the code. We will reset the padding and create that separation with a 
 <div class="o-grid">
     <div class="boxM-25 boxS-100">
         <div class="o-grid">
-            <div class="boxM-1 boxS-1 pReset mb10">
+            <div class="boxM-100 boxS-100 pReset mb10">
                 <div class="box"></div>
             </div>
         </div>
         <div class="o-grid">
-            <div class="boxM-1 boxS-1 pReset">
+            <div class="boxM-100 boxS-100 pReset">
                 <div class="box"></div>
             </div>
         </div>
