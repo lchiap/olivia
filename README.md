@@ -6,7 +6,7 @@ Welcome to Overload Grid. This is a simple, easy and powerful CSS Grid. It's fre
 ## Installation
 
 -   Clone `git clone https://github.com/Luifi/Overload-Grid`
--   [Download the latest version](https://github.com/.zip)
+-   [Download the latest version](https://github.com/Luifi/Overload-Grid.zip)
 
 
 
@@ -64,7 +64,7 @@ Creating your settings width for the blocks is really simple, all you need to ke
 ### Support
 If you have any questions or you can help us improve this grid please contact me, we will gladly answer.:
 
--   [overloadsgn@gmail.com](mailto:overloadsgnoverloadsgn@gmail.com)
+-   [overloadsgn@gmail.com](mailto:overloadsgn@gmail.com)
 -   [@luifich](http://twitter.com/luifich)
 -   [@ma7payne](http://twitter.com/ma7payne)
 
