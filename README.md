@@ -1,4 +1,4 @@
-# Overload Grid
+# Overload Grid.
 
 Welcome to Overload Grid. This is a simple, easy and powerful CSS Grid. It's free, you can use this Grid for your proyects.
 
