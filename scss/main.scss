@@ -91,8 +91,7 @@ GRID STYLES/ESTILOS DE GRILLA
     .boxS-8 { width: 8.33%; }
     
     /*---------- Medium screens ----------- */
-    @media only screen 
-    and (min-width : 980px) {
+    @media screen and (min-width: 980px) {
 
         .boxM-100  { width: 100%; }
         .boxM-75 { width: 75%; }
@@ -111,8 +110,7 @@ GRID STYLES/ESTILOS DE GRILLA
     }
     
     /*---------- Large screens ----------- */
-    @media only screen 
-    and (min-width : 1366px) {
+    @media screen and (min-width: 1366px) {
 
         .boxL-100  { width: 100%; }
         .boxL-75 { width: 75%; }
