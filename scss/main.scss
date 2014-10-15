@@ -17,12 +17,10 @@
 }
 
 /* ================================ 
-GRID STYLES/ESTILOS DE GRILLA 
+BASE
 =================================== */
 
-*,
-*:after,
-*:before {
+* {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -30,47 +28,54 @@ GRID STYLES/ESTILOS DE GRILLA
     box-sizing: border-box
 }
 
-body{
+body {
     padding: 20px;
     background: #008fd9;
     color: white;
 }
 
-/* Container */
-.container {
+/* ================================ 
+GRID STYLES/ESTILOS DE GRILLA 
+=================================== */
+
+/* Box Container */
+.ovl-container {
     margin: auto;
     max-width: 960px;
     position: relative;
 }
 
-.container-fluid {
+.ovl-container_fluid {
     width: 100%;
 }
 
 /* Row container */
-.o-grid {
+.ovl-grid {
     margin: 0 auto;
     margin-left: -0.3em;
     margin-right: -0.3em;
+    
+    /* Attribute selector */
+    [class*='box-'] {
+        float: left;
+        padding: 0.3em;
+        
+        /* Floats last ".box-" to the right */
+        &:last-of-type {
+            float: right;
+        }
+    }
+    
+    /* Clearfix */
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
-/* Attribute selector */
-[class*='boxS-'], [class*='boxM-'], [class*='boxL-'] {
-    float: left;
-    padding: 0.3em;
-}
 
-/* Floats last ".box-" to the right */
-[class*='boxS-']:last-of-type,  [class*='boxM-']:last-of-type, [class*='boxL-']:last-of-type{
-    float: right;
-}
 
-/* Clearfix */
-.o-grid:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /* Set Widths */
 
@@ -132,66 +137,6 @@ and (min-width : 780px) {
     .boxS-8 { width: 8.33%; }
 }
 
-
-/* ================================ 
-COMMON STYLES/ESTILOS COMUNES 
-=================================== */
-
-body {
-    font-size: 16px;
-}
-
-/* Padding Set */
-.pt5{padding-top:5px}
-.pt10{padding-top:10px}
-.pt15{padding-top:15px}
-.pt20{padding-top:20px}
-.pt25{padding-top:25px}
-.pt30{padding-top:30px}
-.pt40{padding-top:40px}
-
-.pb5{padding-bottom:5px}
-.pb10{padding-bottom:10px}
-.pb15{padding-bottom:15px}
-.pb20{padding-bottom:20px}
-.pb25{padding-bottom:25px}
-.pb30{padding-bottom:30px}
-.pb40{padding-bottom:40px}
-
-.pReset{ padding: 0;}
-
-/* Margin Set */
-.mr5{ margin-right:5px!important;}
-.mr10{ margin-right:10px!important;}
-.ml5{ margin-left:5px!important;}
-.ml10{ margin-left:10px!important}
-.mr20{ margin-right:20px!important;}
-.ml20{ margin-left:20px!important}
-.mr30{ margin-right:30px!important;}
-.ml30{ margin-left:30px!important}
-
-.mt5{margin-top:5px}
-.mt10{ margin-top:10px}
-.mt15{margin-top:15px}
-.mt20{margin-top:20px}
-.mt25{margin-top:25px}
-.mt30{margin-top:30px}
-.mt40{margin-top:40px}
-
-.mb5{margin-bottom:5px}
-.mb10{margin-bottom:10px}
-.mb15{margin-bottom:15px}
-.mb20{margin-bottom:20px}
-.mb25{margin-bottom:25px}
-.mb30{margin-bottom:30px}
-
-.mAuto {margin: auto !important;}
-
-.mReset {margin: 0px !important;}
-
-.clear {clear: both;}
-
-.floatReset {float: none !important;}
 
 
 
