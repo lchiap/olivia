@@ -1,0 +1,36 @@
+/*
+*
+* Overload Grid v1.2
+* Copyright 2014, Luis Chiappe - Interactie -
+* Overloadesign.com | luischiappe.com.ar
+* Free to use for web designers and web developers.
+* Enjoy!
+*
+*/
+
+.block {
+    text-align: center;
+    font: 15px "Helvetica Neue";
+    background:#046da4;
+    color: #008fd9;
+    padding: 15px 0 15px 0
+}
+
+/* ================================ 
+BASE
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    padding: 20px;
+    background: #008fd9;
+    color: white;
+}
+
