@@ -8,7 +8,7 @@
 *
 */
 
-.box {
+.block {
     text-align: center;
     font: 15px "Helvetica Neue";
     background:#046da4;
@@ -56,9 +56,10 @@ GRID STYLES/ESTILOS DE GRILLA
     margin-right: -0.3em;
     
     /* Attribute selector */
-    [class*='box-'] {
+    [class*='box'] {
         float: left;
         padding: 0.3em;
+        width: 100%;
         
         /* Floats last ".box-" to the right */
         &:last-of-type {
@@ -72,55 +73,8 @@ GRID STYLES/ESTILOS DE GRILLA
         display: table;
         clear: both;
     }
-}
-
-
-
-
-/* Set Widths */
-
-/*---------- Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-
-    .boxL-100  { width: 100%; }
-    .boxL-75 { width: 75%; }
-    .boxL-50  { width: 50%; }
-    .boxL-33  { width: 33.33%; }
-    .boxL-25  { width: 25%; }
-    .boxL-20  { width: 20%; }
-    .boxL-16  { width: 16.6666666667%; }
-    .boxL-14 { width: 14.2857142857%; }
-    .boxL-12  { width: 12.5%; }
-    .boxL-11 { width: 11.1111111111%; }
-    .boxL-10 { width: 10%; }
-    .boxL-9 { width: 9.09090909091%; }
-    .boxL-8 { width: 8.33%; }
-
-}
-
-/*---------- Medium screens ----------- */
-@media only screen 
-and (min-width : 780px) {
-
-    .boxM-100  { width: 100%; }
-    .boxM-75 { width: 75%; }
-    .boxM-50  { width: 50%; }
-    .boxM-33  { width: 33.33%; }
-    .boxM-25  { width: 25%; }
-    .boxM-20  { width: 20%; }
-    .boxM-16  { width: 16.6666666667%; }
-    .boxM-14 { width: 14.2857142857%; }
-    .boxM-12  { width: 12.5%; }
-    .boxM-11 { width: 11.1111111111%; }
-    .boxM-10 { width: 10%; }
-    .boxM-9 { width: 9.09090909091%; }
-    .boxM-8 { width: 8.33%; }
     
-}
-
-/*---------- Small screens mobiles ----------- */
-@media (max-width: 780px) {
+    /*---------- Mobile First ----------- */
 
     .boxS-100  { width: 100%; }
     .boxS-75 { width: 75%; }
@@ -135,7 +89,58 @@ and (min-width : 780px) {
     .boxS-10 { width: 10%; }
     .boxS-9 { width: 9.09090909091%; }
     .boxS-8 { width: 8.33%; }
+    
+    /*---------- Medium screens ----------- */
+    @media only screen 
+    and (min-width : 980px) {
+
+        .boxM-100  { width: 100%; }
+        .boxM-75 { width: 75%; }
+        .boxM-50  { width: 50%; }
+        .boxM-33  { width: 33.33%; }
+        .boxM-25  { width: 25%; }
+        .boxM-20  { width: 20%; }
+        .boxM-16  { width: 16.6666666667%; }
+        .boxM-14 { width: 14.2857142857%; }
+        .boxM-12  { width: 12.5%; }
+        .boxM-11 { width: 11.1111111111%; }
+        .boxM-10 { width: 10%; }
+        .boxM-9 { width: 9.09090909091%; }
+        .boxM-8 { width: 8.33%; }
+
+    }
+    
+    /*---------- Large screens ----------- */
+    @media only screen 
+    and (min-width : 1366px) {
+
+        .boxL-100  { width: 100%; }
+        .boxL-75 { width: 75%; }
+        .boxL-50  { width: 50%; }
+        .boxL-33  { width: 33.33%; }
+        .boxL-25  { width: 25%; }
+        .boxL-20  { width: 20%; }
+        .boxL-16  { width: 16.6666666667%; }
+        .boxL-14 { width: 14.2857142857%; }
+        .boxL-12  { width: 12.5%; }
+        .boxL-11 { width: 11.1111111111%; }
+        .boxL-10 { width: 10%; }
+        .boxL-9 { width: 9.09090909091%; }
+        .boxL-8 { width: 8.33%; }
+
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
