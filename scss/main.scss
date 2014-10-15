@@ -1,7 +1,7 @@
 /*
 *
-* Overload Grid v1.1
-* Copyright 2014, Luis Chiappe - Overload - Web & Graphic design -
+* Overload Grid v1.2
+* Copyright 2014, Luis Chiappe - Interactie -
 * Overloadesign.com | luischiappe.com.ar
 * Free to use for web designers and web developers.
 * Enjoy!
@@ -41,7 +41,7 @@ GRID STYLES/ESTILOS DE GRILLA
 /* Box Container */
 .ovl-container {
     margin: auto;
-    max-width: 960px;
+    max-width: 1200px;
     position: relative;
 }
 
@@ -75,7 +75,6 @@ GRID STYLES/ESTILOS DE GRILLA
     }
     
     /*---------- Mobile First ----------- */
-
     .boxS-75 { width: 75%; }
     .boxS-50  { width: 50%; }
     .boxS-33  { width: 33.33%; }
