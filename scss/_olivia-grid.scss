@@ -2,18 +2,18 @@
 
 /*----------  Containers ----------*/
 
-.ovl-container {
+.container {
     margin: auto;
     max-width: $fix-width; // Set de max width on _config.scss of your container
     position: relative;
 }
 
-.ovl-container_fluid {
+.container_fluid {
     width: $full-width;
 }
 
 /*---------- Row ----------*/
-.ovl-grid {
+.cube-row {
     margin-left: -$gutter;
     margin-right: -$gutter;
     
@@ -29,7 +29,7 @@
         }
         
         /* Fix gutter for nesting boxes */
-        & .ovl-grid {
+        & .cube-row {
             margin-bottom: -$gutter;
             margin-top: $gutter;
         }
@@ -46,7 +46,7 @@
     
     /*---------- Small screens ----------- */
     @for $i from $first through $last {
-        .boxS-#{$i} {
+        .box-s-#{$i} {
             width: $full-width / $i;
         }
     }
@@ -55,7 +55,7 @@
     @media screen and (min-width: $medium-screen) {
 
         @for $i from $first through $last {
-            .boxM-#{$i} {
+            .box-m-#{$i} {
                 width: $full-width / $i;
             }
         }
@@ -66,7 +66,7 @@
     @media screen and (min-width: $large-screen) {
 
         @for $i from $first through $last {
-            .boxL-#{$i} {
+            .box-l-#{$i} {
                 width: $full-width / $i;
             }
         }
