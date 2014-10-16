@@ -16,20 +16,38 @@ body {
     padding: 20px;
     color: white;
     position: relative;
-    background: -webkit-linear-gradient(45deg, #008fd9 10%, #046da4 90%);
-    background: linear-gradient(45deg, #008fd9 10%, #046da4 90%);
+    background: -webkit-linear-gradient(45deg, #F5936C 10%, #F5709B 90%);
+    background: linear-gradient(45deg, #F5936C 10%, #F5709B 90%);
     overflow: hidden;
     -webkit-background-size: 200% 100% !important;
     background-size: 200% 100% !important;
     -webkit-animation: move 10s ease infinite;
     animation: move 10s ease infinite;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4.5em;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: .3em;
+    font-weight: 300;
+    display: block;
+    
+    &:hover {
+        color: #008fd9;
+    }
 }
 
 .block {
     text-align: center;
     font: 15px "Helvetica Neue";
-    background:#046da4;
-    color: #008fd9;
+    background: rgba(0,0,0,.1);
+    color: rgba(0,0,0,.4);
     padding: 15px 0 15px 0
 }
 
