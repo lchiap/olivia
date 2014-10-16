@@ -47,7 +47,7 @@ GRID STYLES/ESTILOS DE GRILLA
     }
     
     /*---------- Medium screens ----------- */
-    @media screen and (min-width: 980px) {
+    @media screen and (min-width: $medium-screen) {
 
         @for $i from $first through $last {
             .boxM-#{$i} {
@@ -58,7 +58,7 @@ GRID STYLES/ESTILOS DE GRILLA
     }
     
     /*---------- Large screens ----------- */
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: $large-screen) {
 
         @for $i from $first through $last {
             .boxL-#{$i} {
