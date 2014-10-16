@@ -28,6 +28,12 @@ GRID STYLES/ESTILOS DE GRILLA
         &:last-of-type {
             float: right;
         }
+        
+        /* Fix gutter for nesting boxes */
+        & .ovl-grid {
+            margin-bottom: -$gutter;
+            margin-top: $gutter;
+        }
     }
     
     /* Clearfix */
