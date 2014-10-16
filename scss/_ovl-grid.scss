@@ -7,7 +7,7 @@ GRID STYLES/ESTILOS DE GRILLA
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 /* Box Container */
@@ -24,14 +24,14 @@ GRID STYLES/ESTILOS DE GRILLA
 /* Row container */
 .ovl-grid {
     margin: 0 auto;
-    margin-left: -0.3em;
-    margin-right: -0.3em;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
     
     /* Attribute selector */
     [class*='box'] {
         float: left;
-        padding: 0.3em;
-        width: 100%;
+        padding: $gutter;
+        width: $full-width; // By default all the box is full width
         
         /* Floats last ".box-" to the right */
         &:last-of-type {
