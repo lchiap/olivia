@@ -2,28 +2,19 @@
 GRID STYLES/ESTILOS DE GRILLA 
 =================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 /* Box Container */
 .ovl-container {
     margin: auto;
-    max-width: 1200px;
+    max-width: $fix-width; // Set de max width on _config.scss of your container
     position: relative;
 }
 
 .ovl-container_fluid {
-    width: 100%;
+    width: $full-width;
 }
 
 /* Row container */
 .ovl-grid {
-    margin: 0 auto;
     margin-left: -$gutter;
     margin-right: -$gutter;
     
@@ -31,7 +22,7 @@ GRID STYLES/ESTILOS DE GRILLA
     [class*='box'] {
         float: left;
         padding: $gutter;
-        width: $full-width; // By default all the box is full width
+        width: $full-width; // 
         
         /* Floats last ".box-" to the right */
         &:last-of-type {
@@ -46,53 +37,34 @@ GRID STYLES/ESTILOS DE GRILLA
         clear: both;
     }
     
-    /*---------- Mobile First ----------- */
-    .boxS-75 { width: 75%; }
-    .boxS-50  { width: 50%; }
-    .boxS-33  { width: 33.33%; }
-    .boxS-25  { width: 25%; }
-    .boxS-20  { width: 20%; }
-    .boxS-16  { width: 16.6666666667%; }
-    .boxS-14 { width: 14.2857142857%; }
-    .boxS-12  { width: 12.5%; }
-    .boxS-11 { width: 11.1111111111%; }
-    .boxS-10 { width: 10%; }
-    .boxS-9 { width: 9.09090909091%; }
-    .boxS-8 { width: 8.33%; }
+    /*---------- REMEMBER: By default all the box is full width, but if you want you can modify that ----------- */
+    
+    // Width for boxes
+    @for $i from $first through $last {
+        .boxS-#{$i} {
+            width: $full-width / $i;
+        }
+    }
     
     /*---------- Medium screens ----------- */
     @media screen and (min-width: 980px) {
 
-        .boxM-75 { width: 75%; }
-        .boxM-50  { width: 50%; }
-        .boxM-33  { width: 33.33%; }
-        .boxM-25  { width: 25%; }
-        .boxM-20  { width: 20%; }
-        .boxM-16  { width: 16.6666666667%; }
-        .boxM-14 { width: 14.2857142857%; }
-        .boxM-12  { width: 12.5%; }
-        .boxM-11 { width: 11.1111111111%; }
-        .boxM-10 { width: 10%; }
-        .boxM-9 { width: 9.09090909091%; }
-        .boxM-8 { width: 8.33%; }
+        @for $i from $first through $last {
+            .boxM-#{$i} {
+                width: $full-width / $i;
+            }
+        }
 
     }
     
     /*---------- Large screens ----------- */
     @media screen and (min-width: 1366px) {
 
-        .boxL-75 { width: 75%; }
-        .boxL-50  { width: 50%; }
-        .boxL-33  { width: 33.33%; }
-        .boxL-25  { width: 25%; }
-        .boxL-20  { width: 20%; }
-        .boxL-16  { width: 16.6666666667%; }
-        .boxL-14 { width: 14.2857142857%; }
-        .boxL-12  { width: 12.5%; }
-        .boxL-11 { width: 11.1111111111%; }
-        .boxL-10 { width: 10%; }
-        .boxL-9 { width: 9.09090909091%; }
-        .boxL-8 { width: 8.33%; }
+        @for $i from $first through $last {
+            .boxL-#{$i} {
+                width: $full-width / $i;
+            }
+        }
 
     }
     

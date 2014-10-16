@@ -1,16 +1,27 @@
 /*========== VARIABLES ==========*/
 
-// Width columns
-$full-width: 100%;
+// Width containers and columns
+$full-width     : 100%;
+$fix-width     : 1200px;
+
+// First and last column
+$first          : 1;
+$last           : 12;
+
 
 // Media Queries Breakpoints
-$medium-screen:      		980px; 
-$large-screen:       		1366px; 
+$medium-screen  : 980px; 
+$large-screen   : 1366px; 
 
 // Size of gutter
-$gutters: 		0.3em;
-
-// Colors
+$gutter        : 0.3em;
 
 
 /*========== MIXINS ==========*/
+@mixin box-sizing($value){
+    box-sizing: $value;
+    -webkit-box-sizing: $value;
+    -moz-box-sizing: $value;
+    -ms-box-sizing: $value;
+    -o-box-sizing: $value;
+}
