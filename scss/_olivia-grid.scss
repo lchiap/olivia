@@ -13,7 +13,7 @@
 }
 
 /*---------- Row ----------*/
-.cube-row {
+.o-row {
     margin-left: -$gutter;
     margin-right: -$gutter;
     
@@ -29,7 +29,7 @@
         }
         
         /* Fix gutter for nesting boxes */
-        & .cube-row {
+        & .o-row{
             margin-bottom: -$gutter;
             margin-top: $gutter;
         }

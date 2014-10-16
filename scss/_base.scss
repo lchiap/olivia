@@ -7,10 +7,22 @@
 
 
 //Demo block
+html {
+    height: 100%;
+}
+
 body {
+    font-family: 'Raleway', sans-serif;
     padding: 20px;
-    background: #008fd9;
     color: white;
+    position: relative;
+    background: -webkit-linear-gradient(45deg, #008fd9 10%, #046da4 90%);
+    background: linear-gradient(45deg, #008fd9 10%, #046da4 90%);
+    overflow: hidden;
+    -webkit-background-size: 200% 100% !important;
+    background-size: 200% 100% !important;
+    -webkit-animation: move 10s ease infinite;
+    animation: move 10s ease infinite;
 }
 
 .block {
