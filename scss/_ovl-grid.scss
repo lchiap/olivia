@@ -1,8 +1,7 @@
-/* ================================ 
-GRID STYLES/ESTILOS DE GRILLA 
-=================================== */
+/*========== GRID ==========*/
 
-/* Box Container */
+/*----------  Containers ----------*/
+
 .ovl-container {
     margin: auto;
     max-width: $fix-width; // Set de max width on _config.scss of your container
@@ -13,7 +12,7 @@ GRID STYLES/ESTILOS DE GRILLA
     width: $full-width;
 }
 
-/* Row container */
+/*---------- Row ----------*/
 .ovl-grid {
     margin-left: -$gutter;
     margin-right: -$gutter;
@@ -43,9 +42,9 @@ GRID STYLES/ESTILOS DE GRILLA
         clear: both;
     }
     
-    /*---------- REMEMBER: By default all the box is full width, but if you want you can modify that ----------- */
+    /*---------- REMEMBER: By default all the box has full width ----------- */
     
-    // Width for boxes
+    /*---------- Small screens ----------- */
     @for $i from $first through $last {
         .boxS-#{$i} {
             width: $full-width / $i;
