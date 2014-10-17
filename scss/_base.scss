@@ -18,9 +18,6 @@ body {
     position: relative;
     background: -webkit-linear-gradient(45deg, #F5936C 10%, #F5709B 90%);
     background: linear-gradient(45deg, #F5936C 10%, #F5709B 90%);
-    overflow: hidden;
-    -webkit-background-size: 200% 100% !important;
-    background-size: 200% 100% !important;
     -webkit-animation: move 10s ease infinite;
     animation: move 10s ease infinite;
     text-align: center;
