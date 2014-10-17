@@ -9,7 +9,6 @@ Welcome to Olivia Grid. This is a simple, easy and powerful CSS Grid System base
 -   [Download the latest version]()
 
 
-
 ## Getting Started
 
 #### First you need to link the stylesheet
