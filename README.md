@@ -1,12 +1,12 @@
-# Overload Grid.
+# Olivia Grid System By Overload.
 
-Welcome to Overload Grid. This is a simple, easy and powerful CSS Grid. It's free, you can use this Grid for your proyects.
+Welcome to Olivia Grid. This is a simple, easy and powerful CSS Grid System based in SASS. It's free, you can use this Grid for your proyects.
 
 
 ## Installation
 
--   Clone `git clone https://github.com/Luifi/Overload-Grid`
--   [Download the latest version](https://github.com/Luifi/Overload-Grid.zip)
+-   Clone ``
+-   [Download the latest version]()
 
 
 
@@ -14,20 +14,15 @@ Welcome to Overload Grid. This is a simple, easy and powerful CSS Grid. It's fre
 
 #### First you need to link the stylesheet
 ```
-<link rel="stylesheet" type="text/css" href="css/overload-grid.css">
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="">
+
 ```
 
 #### Structuring your layouts. Example:
 ```
-<div class="container">
-    <div class="o-grid">
-        <div class="boxM-50 boxS-100">
-            <div class="box">2 Medium - 1 Small</div>
-        </div>
-        <div class="boxM-50 boxS-100">
-            <div class="box">2 Medium - 1 Small</div>
-        </div>
+<div class="o-row">
+    <div class="box-m-1">
+        <div class="block">1</div>
     </div>
 </div>
 ```
