@@ -1,4 +1,10 @@
 /*========== GRID ==========*/
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing(border-box);
+}
+
 
 /*----------  Containers ----------*/
 

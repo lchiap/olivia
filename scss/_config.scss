@@ -18,6 +18,8 @@ $gutter        : 0.3em;
 
 
 /*========== MIXINS ==========*/
+
+//Box sizing
 @mixin box-sizing($value){
     box-sizing: $value;
     -webkit-box-sizing: $value;
